@@ -1,6 +1,7 @@
 import React from 'react';
 import { Platform } from 'react-native';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import config from '../../config';
 
 export default function Search({ onLocationSelected }) {
     return (
@@ -9,7 +10,7 @@ export default function Search({ onLocationSelected }) {
             palceholderTextColor="#333"
             onPress={onLocationSelected}
             query={{
-                key: 'API_KEY',
+                key: config.apiKey,
                 language: 'pt',
             }}
             textInputProps={{

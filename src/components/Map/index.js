@@ -9,6 +9,8 @@ import Search from '../Search';
 import Directions from '../Directions';
 import Details from '../Details';
 
+import config from '../../config';
+
 import markerImage from '../../assets/marker.png';
 import backImage from '../../assets/back.png';
 
@@ -21,7 +23,7 @@ import {
     Back,
 } from './styles';
 
-Geocoder.init('API_KEY');
+Geocoder.init(config.apiKey);
 
 export default function Map() {
     const [region, setRegion] = useState({
@@ -37,6 +39,8 @@ export default function Map() {
     const mapViewRef = useRef();
 
     useEffect(() => {
+        console.log('useEffect() - executed');
+
         Geolocation.getCurrentPosition(
             ({ coords: { latitude, longitude } }) => {
                 setRegion({
