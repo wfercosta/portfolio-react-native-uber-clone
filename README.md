@@ -19,7 +19,13 @@ Here is the libraries that I have used during this development:
 
 ## How to use
 
-TBD
+1 - Configure a ```.env``` file following the required environment variables available in ```.env.example```
+
+2 - Run the application using ```react-native``` cli:
+
+```
+$ npx react-native run-ios
+```
 
 ## License
 
