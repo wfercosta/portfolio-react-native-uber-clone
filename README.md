@@ -8,7 +8,7 @@ This is practice development with React Native and Google Maps API where I have 
 </p>
 
 
-## What a have used?
+## What have I used?
 
 Here is the libraries that I have used during this development:
 
