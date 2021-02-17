@@ -1,4 +1,4 @@
-# Uber clone: case study with Google Maps and React Native
+# Case study React Native: Uber clone
 ## About
 
 This is practice development with React Native and Google Maps API where I have code a simple "clone" from Uber mobile app.
